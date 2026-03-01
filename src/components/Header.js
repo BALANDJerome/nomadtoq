@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <div className="navbar">
+    <div className="header">
       <div className="navbar_logo">
         <img src="./assets/img/Logo_Nomad_Toq.png" alt="logo nomad'toq" />
       </div>

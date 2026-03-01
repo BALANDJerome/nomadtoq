@@ -4,9 +4,7 @@ import Header from "../components/Header";
 const Home = () => {
   return (
     <div className="home_container">
-      <div className="header">
-        <Header></Header>
-      </div>
+      <Header></Header>
       <div className="home_img">
         <img src="" alt="crêpes" />
         <img src="" alt="galettes" />

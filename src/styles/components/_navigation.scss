@@ -1,0 +1,11 @@
+.navigation {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 5px;
+    a {
+      text-transform: uppercase;
+    }
+  }
+}
