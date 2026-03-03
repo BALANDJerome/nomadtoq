@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   img {
     border: 2px solid red;
-    height: 500px;
+    width: 50vw;
+    max-height: 700px;
   }
 }

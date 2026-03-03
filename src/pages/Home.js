@@ -6,8 +6,8 @@ const Home = () => {
     <div className="home_container">
       <Header></Header>
       <div className="home_img">
-        <img src="" alt="crêpes" />
-        <img src="" alt="galettes" />
+        <img src="./assets/img/Logo_Nomad_Toq2.png" alt="crêpes" />
+        <img src="./assets/img/Logo_Nomad_Toq2.png" alt="galettes" />
       </div>
       <div className="home_about_me">
         <div className="about_me_title">
@@ -18,7 +18,10 @@ const Home = () => {
           </p>
         </div>
         <div className="about_me_description">
-          <img src="" alt="photo du food truck en forme de toque" />
+          <img
+            src="./assets/img/Logo_Nomad_Toq.png"
+            alt="photo du food truck en forme de toque"
+          />
           <p>
             Bienvenue chez Nomad Toq ! Ma mission est simple : vous apporter la
             saveur des galettes bretonnes directement à voter rencontre.

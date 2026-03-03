@@ -2,10 +2,40 @@
   ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     border: 1px solid black;
-    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+    background: rgb(245, 245, 245);
     a {
+      position: relative;
+      text-align: center;
       text-transform: uppercase;
+      &:hover {
+        color: rgb(184, 162, 92);
+        transition: 0.4s;
+        transform: scale(1.1);
+        &::after {
+          position: absolute;
+          content: "";
+          transform: translateX(-50%);
+          background: rgb(21, 22, 78);
+          height: 1px;
+          width: 100%;
+        }
+      }
+    }
+    .nav-active {
+      color: rgb(184, 162, 92);
+      &::after {
+        position: absolute;
+        content: "";
+        transform: translateX(-50%);
+        background: rgb(21, 22, 78);
+        height: 1px;
+        width: 100%;
+      }
     }
   }
 }
