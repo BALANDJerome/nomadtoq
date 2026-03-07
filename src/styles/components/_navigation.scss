@@ -1,9 +1,8 @@
 .navigation {
   position: relative;
-  margin: 26px auto;
   ul {
     position: absolute;
-    top: -26px;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -42,7 +41,5 @@
 .sticky {
   ul {
     position: fixed;
-    top: 0;
-    width: 100%;
   }
 }

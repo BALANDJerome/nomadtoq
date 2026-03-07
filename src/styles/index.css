@@ -36,6 +36,9 @@ a {
   color: black;
 }
 
+.header {
+  margin-bottom: 55px;
+}
 .header .navbar_logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,11 +51,10 @@ a {
 
 .navigation {
   position: relative;
-  margin: 26px auto;
 }
 .navigation ul {
   position: absolute;
-  top: -26px;
+  top: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,8 +91,6 @@ a {
 
 .sticky ul {
   position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .home_img {
