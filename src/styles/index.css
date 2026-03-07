@@ -7,6 +7,27 @@
 
 body {
   background: rgb(241, 227, 189);
+  position: relative;
+}
+body::before {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  content: "";
+  height: 400px;
+  width: 240px;
+  background: url(../../public/assets/img/herminebg.png) center/cover;
+  z-index: -1;
+}
+body::after {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 400px;
+  width: 240px;
+  background: url(../../public/assets/img/herminebg.png) center/cover;
+  z-index: -1;
 }
 
 a {
@@ -25,25 +46,35 @@ a {
   height: 300px;
 }
 
+.navigation {
+  position: relative;
+  margin: 26px auto;
+}
 .navigation ul {
+  position: absolute;
+  top: -26px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 5px;
-  height: 40px;
-  background: rgb(245, 245, 245);
+  padding: 15px 5px;
+  background: rgb(30, 67, 103);
+}
+.navigation ul .ligne {
+  border: 1px solid rgb(184, 162, 92);
+  height: 25px;
 }
 .navigation ul a {
-  position: relative;
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
 }
 .navigation ul a:hover {
   color: rgb(184, 162, 92);
@@ -52,25 +83,13 @@ a {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.navigation ul a:hover::after {
-  position: absolute;
-  content: "";
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: rgb(21, 22, 78);
-  height: 1px;
-  width: 100%;
-}
 .navigation ul .nav-active {
   color: rgb(184, 162, 92);
 }
-.navigation ul .nav-active::after {
-  position: absolute;
-  content: "";
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: rgb(21, 22, 78);
-  height: 1px;
+
+.sticky ul {
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -80,6 +99,38 @@ a {
 }
 .home_img img {
   border: 2px solid red;
-  width: 50vw;
-  max-height: 700px;
+  max-width: 100%;
+}
+
+.home_about_me {
+  padding: 20px 50px;
+}
+.home_about_me .about_me_title {
+  background: rgb(30, 67, 103);
+}
+.home_about_me .about_me_description {
+  margin: 50px auto;
+  background: rgba(30, 66, 103, 0.842);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.home_about_me .about_me_description img {
+  width: 100%;
+  max-width: 500px;
+}
+.home_about_me .about_me_description div {
+  width: 500px;
+}
+.home_about_me .about_me_description div p {
+  margin: 20px;
+}
+.home_about_me .about_me_engagement {
+  background: rgba(165, 122, 42, 0.808);
 }/*# sourceMappingURL=index.css.map */

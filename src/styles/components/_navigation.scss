@@ -1,41 +1,48 @@
 .navigation {
+  position: relative;
+  margin: 26px auto;
   ul {
+    position: absolute;
+    top: -26px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 5px;
-    height: 40px;
-    background: rgb(245, 245, 245);
+    padding: 15px 5px;
+    background: rgb(30, 67, 103);
+    .ligne {
+      border: 1px solid rgb(184, 162, 92);
+      height: 25px;
+    }
     a {
-      position: relative;
+      // position: relative;
       text-align: center;
       text-transform: uppercase;
+      font-size: 1.2rem;
+      color: white;
       &:hover {
         color: rgb(184, 162, 92);
         transition: 0.4s;
         transform: scale(1.1);
-        &::after {
-          position: absolute;
-          content: "";
-          transform: translateX(-50%);
-          background: rgb(21, 22, 78);
-          height: 1px;
-          width: 100%;
-        }
+        // &::after {
+        //   position: absolute;
+        //   content: "";
+        //   transform: translateX(-50%);
+        //   background: rgb(197, 147, 40);
+        //   height: 1px;
+        //   width: 100%;
+        // }
       }
     }
     .nav-active {
       color: rgb(184, 162, 92);
-      &::after {
-        position: absolute;
-        content: "";
-        transform: translateX(-50%);
-        background: rgb(21, 22, 78);
-        height: 1px;
-        width: 100%;
-      }
     }
+  }
+}
+.sticky {
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }

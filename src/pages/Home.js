@@ -22,15 +22,17 @@ const Home = () => {
             src="./assets/img/Logo_Nomad_Toq.png"
             alt="photo du food truck en forme de toque"
           />
-          <p>
-            Bienvenue chez Nomad Toq ! Ma mission est simple : vous apporter la
-            saveur des galettes bretonnes directement à voter rencontre.
-          </p>
-          <p>
-            A bord de ma créperie ambulante, je prépare sous vos yeux galettes
-            et crêpes généreuses, cuisinées avec un maximum de produit frais et
-            locaux.
-          </p>
+          <div>
+            <p>
+              Bienvenue chez Nomad Toq ! Ma mission est simple : vous apporter
+              la saveur des galettes bretonnes directement à voter rencontre.
+            </p>
+            <p>
+              A bord de ma créperie ambulante, je prépare sous vos yeux galettes
+              et crêpes généreuses, cuisinées avec un maximum de produit frais
+              et locaux.
+            </p>
+          </div>
         </div>
         <div className="about_me_engagement">
           <h3>Mes engagements</h3>

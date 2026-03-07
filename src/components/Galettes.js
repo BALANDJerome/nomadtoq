@@ -15,6 +15,7 @@ const Galettes = () => {
       {galetteArray.map((el, index) => (
         <div key={index}>
           <div>
+            <img src="./assets/img/Logo_Nomad_Toq.png" alt="" />
             <h5>{el[0]}</h5>
             <p>{el[2]} €</p>
           </div>
