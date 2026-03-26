@@ -111,9 +111,8 @@ a {
 .home_about_me .about_me_description {
   margin: 50px auto;
   background: rgba(30, 66, 103, 0.842);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -123,14 +122,23 @@ a {
 }
 .home_about_me .about_me_description img {
   width: 100%;
-  max-width: 500px;
+  min-width: 100px;
 }
 .home_about_me .about_me_description div {
-  width: 500px;
+  max-width: 600px;
 }
 .home_about_me .about_me_description div p {
   margin: 20px;
 }
 .home_about_me .about_me_engagement {
   background: rgba(165, 122, 42, 0.808);
+}
+
+.carte_title {
+  border: 2px solid green;
+  padding: 10px 20px;
+}
+
+.carte_menu {
+  border: 2px solid red;
 }/*# sourceMappingURL=index.css.map */
