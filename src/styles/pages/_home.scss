@@ -1,9 +1,9 @@
 .home_img {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
   img {
-    border: 2px solid red;
-    max-width: 100%;
+    width: 100%;
   }
 }
 .home_about_me {

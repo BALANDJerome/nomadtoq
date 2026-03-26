@@ -14,12 +14,10 @@ const Galettes = () => {
     <div className="carte_items">
       {galetteArray.map((el, index) => (
         <div key={index}>
-          <div>
-            <img src={"https://picsum.photos/600/400?random=" + index} alt="" />
-            <h5>{el[0]}</h5>
-            <p>{el[2]} €</p>
-          </div>
+          <img src={"https://picsum.photos/600/400?random=" + index} alt="" />
+          <h5>{el[0]}</h5>
           <p>{el[1]}</p>
+          <p>{el[2]} €</p>
         </div>
       ))}
       <p>Tous les mois retrouvez la galette du mois</p>

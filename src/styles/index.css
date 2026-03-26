@@ -96,10 +96,10 @@ a {
 .home_img {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
 }
 .home_img img {
-  border: 2px solid red;
-  max-width: 100%;
+  width: 100%;
 }
 
 .home_about_me {
@@ -182,9 +182,27 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
+}
+.carte_menu .carte .carte_items div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .carte_menu .carte .carte_items div img {
   border-radius: 100px;
   width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+.carte_menu .carte .carte_items div h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
