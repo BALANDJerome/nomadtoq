@@ -23,10 +23,26 @@ const Carte = () => {
       </div>
       <div className="carte_menu">
         <div className="nav_carte">
-          <button onClick={() => setCartBtn(true)}>
+          <button
+            type="button"
+            className={cartBtn ? "active" : ""}
+            onClick={(e) => {
+              // e.preventDefault();
+              setCartBtn(true);
+            }}
+          >
             Les galettes de blé noir
           </button>
-          <button onClick={() => setCartBtn(false)}>Les crêpes</button>
+          <button
+            type="button"
+            className={!cartBtn ? "active" : ""}
+            onClick={(e) => {
+              // e.preventDefault();
+              setCartBtn(false);
+            }}
+          >
+            Les crêpes
+          </button>
         </div>
         <div className="carte">
           {cartBtn ? <Galettes></Galettes> : <Crepes></Crepes>}

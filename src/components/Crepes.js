@@ -11,10 +11,13 @@ const Crepes = () => {
   ];
 
   return (
-    <div>
+    <div className="carte_items">
       {crepeArray.map((el, index) => (
         <div key={index}>
-          <img src="./assets/img/Logo_Nomad_Toq.png" alt="" />
+          <img
+            src={"https://picsum.photos/600/400?random=" + index + "0"}
+            alt=""
+          />
           <h5>{el[0]}</h5>
           <p>{el[1]} €</p>
         </div>

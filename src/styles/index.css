@@ -136,9 +136,55 @@ a {
 
 .carte_title {
   border: 2px solid green;
+  margin: 30px 20px;
   padding: 10px 20px;
 }
 
 .carte_menu {
-  border: 2px solid red;
+  margin: 10px 20px;
+  background: rgba(31, 68, 107, 0.658);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.carte_menu .nav_carte button {
+  margin: 20px 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background: rgb(30, 66, 103);
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+.carte_menu .nav_carte button:hover {
+  color: rgb(184, 162, 92);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.carte_menu .nav_carte .active {
+  color: rgb(184, 162, 92);
+  border-color: rgb(184, 162, 92);
+}
+.carte_menu .carte {
+  min-height: 80vh;
+}
+.carte_menu .carte .carte_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 0 20px;
+}
+.carte_menu .carte .carte_items div img {
+  border-radius: 100px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

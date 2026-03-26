@@ -11,11 +11,11 @@ const Galettes = () => {
   ];
 
   return (
-    <div>
+    <div className="carte_items">
       {galetteArray.map((el, index) => (
         <div key={index}>
           <div>
-            <img src="./assets/img/Logo_Nomad_Toq.png" alt="" />
+            <img src={"https://picsum.photos/600/400?random=" + index} alt="" />
             <h5>{el[0]}</h5>
             <p>{el[2]} €</p>
           </div>

@@ -6,8 +6,8 @@ const Home = () => {
     <div className="home_container">
       <Header></Header>
       <div className="home_img">
-        <img src="./assets/img/Logo_Nomad_Toq2.png" alt="crêpes" />
-        <img src="./assets/img/Logo_Nomad_Toq2.png" alt="galettes" />
+        <img src={"https://picsum.photos/600/400?random=1"} alt="crêpes" />
+        <img src={"https://picsum.photos/600/400?random=2"} alt="galettes" />
       </div>
       <div className="home_about_me">
         <div className="about_me_title">

@@ -1,7 +1,50 @@
 .carte_title {
   border: 2px solid green;
+  margin: 30px 20px;
   padding: 10px 20px;
 }
 .carte_menu {
-  border: 2px solid red;
+  // min-height: 80vh;
+  margin: 10px 20px;
+  // padding: 10px 20px;
+  background: rgba(31, 68, 107, 0.658);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .nav_carte {
+    button {
+      margin: 20px 15px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 1px solid white;
+      background: rgb(30, 66, 103);
+      cursor: pointer;
+      color: white;
+      text-transform: uppercase;
+      &:hover {
+        color: rgb(184, 162, 92);
+        transition: 0.4s;
+        transform: scale(1.1);
+      }
+    }
+    .active {
+      color: rgb(184, 162, 92);
+      border-color: rgb(184, 162, 92);
+    }
+  }
+  .carte {
+    min-height: 80vh;
+    .carte_items {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      padding: 0 20px;
+      div {
+        img {
+          border-radius: 100px;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
