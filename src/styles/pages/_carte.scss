@@ -54,6 +54,12 @@
           text-transform: uppercase;
         }
       }
+      .galette_month {
+        grid-column: 1 / 4;
+        p {
+          font-size: 1.3rem;
+        }
+      }
     }
   }
 }

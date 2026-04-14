@@ -20,7 +20,9 @@ const Galettes = () => {
           <p>{el[2]} €</p>
         </div>
       ))}
-      <p>Tous les mois retrouvez la galette du mois</p>
+      <div className="galette_month">
+        <p>Tous les mois retrouvez la galette du mois</p>
+      </div>
     </div>
   );
 };

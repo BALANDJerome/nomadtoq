@@ -205,4 +205,10 @@ a {
 .carte_menu .carte .carte_items div h5 {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+.carte_menu .carte .carte_items .galette_month {
+  grid-column: 1/4;
+}
+.carte_menu .carte .carte_items .galette_month p {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=index.css.map */
